@@ -4,324 +4,473 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="shortcut icon" href="./images/logo copy.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YinLiu-Front-end Developer </title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="shortcut icon" href="./images/logo copy.ico" type="image/x-icon" />
+  <title>Lynn Liu | Full-Stack Software Engineer</title>
 </head>
 
 <body>
-  <!-- <section class="logo">
+  <header class="site-header">
     <div class="layout-wrap">
-<img src="./images/logo.png" alt="">
-    </div> -->
-  </section>
-  <section class="bio">
-    <div class="layout-wrap">
-      <!-- <div class="icon-group">
-        <div class="icon-line"></div>
-        <img src="./images/linkedin.png" alt="" />
-        <img src="./images/github.png" alt="" />
-        <img src="./images/email.png" alt="" />
-      </div> -->
-      <h1 class="name">Hi, I’m Lynn LIU |
-        <!-- <span>Graduate <div class="line"></div></span> -->
-        <span>Full-Stack Software Engineer <div class="line titleLine"></div></span>
-
-      </h1>
-
-      <div class="mybio">
-        <div>
-          <p>I’m a curiosity-driven Full-Stack Software Engineer passionate about building robust, scalable, and
-            user-friendly digital products. I enjoy bridging the gap between clean, efficient code and seamless user
-            experiences. Writing maintainable, accessible, and easy-to-read code matters to me just as much as the
-            overall functionality of an application.
-
-          </p>
-          <p>Over the years, I have gained hands-on experience in full-stack development, including JavaScript, React,
-            Node.js, Python (Flask), RESTful APIs, SQL & NoSQL databases, and AWS cloud deployment. I am enthusiastic
-            about learning new technologies and continuously improving my technical skills.
-
-          <p>I thrive in collaborative team environments, working effectively within Agile frameworks, using Jira for
-            task management and Git for version control. I enjoy contributing to group problem-solving, code reviews,
-            and building solutions that align with team goals. </p>
-          <p>Outside of work, I enjoy designing digital interfaces, exploring creative projects, and using tools
-            like Figma for UI/UX design. I also love gardening, road trips, and reading historical novels. My
-            curiosity and attention to detail—both in code and in life—help me deliver high-quality software
-            solutions while keeping the user experience at the forefront.
-          </p>
-          <p>I’m eager to bring my skills, creativity, and collaborative mindset to a forward-thinking team as a
-            Full-Stack Software Engineer in New Zealand.</p>
-          </p>
-        </div>
-
-      </div>
-      </h1>
-  </section>
-  <section class="skills">
-    <div class="layout-wrap">
-      <div class="subtitle">
-        <h3>My <span> Skills<div class="line"></div></span></h3>
-        <p>
-          Through my studies and work experiences, I’ve demonstrated a solid understanding of computer science and web
-          development concepts, and have dedicated a lot of my free time to apply these concepts to real-world scenarios
-          and applications.
-        </p>
-      </div>
-
-      <ul>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>MERN</li>
-
-        <li>Responsive Websites</li>
-        <li>Responsive Websites</li>
-
-        <li>Node.js & Express</li>
-        <li>Python & Flask</li>
-        <li>SQL & MongoDB</li>
-
-        <li>RESTful APIs</li>
-        <li>AWS Cloud Deployment</li>
-        <li>Agile & Scrum</li>
-        <li>Jira</li>
-        <li>Git & Github</li>
-
-        <li>WordPress</li>
-        <li>UX / UI</li>
-        <li>Figma</li>
-
-      </ul>
+      <a class="brand" href="#hero">
+        <img src="./images/logo.png" alt="Lynn Liu logo" />
+        <span>Lynn Liu</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </section>
-  <section class="projects">
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="layout-wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer Portfolio</p>
+          <h2>Full-Stack Developer building cloud-ready systems with .NET, React, and modern engineering practices.</h2>
+          <p class="hero-intro">
+            I build API-driven applications with a strong focus on maintainability, delivery, and real-world workflow
+            design. My work sits at the intersection of product thinking, backend logic, and user-focused
+            implementation.
+          </p>
+          <div class="hero-details">
+            <p>
+              My background combines software implementation, UX awareness, and the discipline of building solutions
+              that are clear to operate and maintain.
+            </p>
+            <p>
+              Experience connected to organisations such as Huawei and Hon Hai strengthened my troubleshooting mindset,
+              reliability focus, and attention to execution details. More recently, internal systems work in New
+              Zealand deepened my interest in workflow clarity, training usability, and practical engineering outcomes.
+            </p>
+            <p>
+              I am especially interested in backend architecture, API design, authentication, deployment pipelines, and
+              the trade-offs that appear when product needs meet technical constraints.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#articles">Engineering Reflections</a>
+          </div>
+          <ul class="hero-signals" aria-label="Engineering focus areas">
+            <li>Backend and service-layer thinking</li>
+            <li>Cloud-ready delivery mindset</li>
+            <li>UX-aware implementation</li>
+          </ul>
+        </div>
+        <aside class="hero-panel">
+          <p class="panel-label">Current focus</p>
+          <div class="focus-list">
+            <div class="focus-item">
+              <span class="focus-title">AI-assisted engineering</span>
+              <p>Applying prompt engineering, AI APIs, and practical machine learning concepts to modern software development workflows and product features.</p>
+            </div>
+            <div class="focus-item">
+              <span class="focus-title">Cloud architecture &amp; distributed systems</span>
+              <p>Building cloud-ready and event-driven applications with Azure Functions, Logic Apps, Docker, and CI/CD while learning scalable system and API design through the AI-200 certification pathway.</p>
+            </div>
+            <div class="focus-item">
+              <span class="focus-title">Engineering quality &amp; secure user experience</span>
+              <p>Focusing on TDD, refactoring, debugging, secure application design, accessibility, and maintainable engineering practices for real-world systems.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="layout-wrap">
+        <div class="section-heading">
+          <p class="section-kicker">Skills &amp; Technologies</p>
+          <!-- <h2>Grouped by how I build and ship software.</h2> -->
+        </div>
+        <div class="skills-grid">
+          <article class="skill-group">
+            <p class="skill-label">Skill 01</p>
+            <h3>Application Engineering</h3>
+            <ul>
+              <li>Building <span class="keyword">full-stack web applications</span> with clear <span class="keyword">frontend, API, and backend</span> responsibilities</li>
+              <li>Designing <span class="keyword">component-driven interfaces</span> that stay <span class="keyword">responsive</span>, <span class="keyword">accessible</span>, and maintainable</li>
+              <li>Translating <span class="keyword">product and workflow requirements</span> into practical implementation decisions</li>
+              <li>Integrating <span class="keyword">REST APIs</span>, <span class="keyword">authentication flows</span>, and <span class="keyword">async state</span> into real user journeys</li>
+              <li>Structuring applications for <span class="keyword">readability</span>, <span class="keyword">reuse</span>, and long-term change</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <p class="skill-label">Skill 02</p>
+            <h3>Cloud, Systems &amp; Delivery</h3>
+            <ul>
+              <li>Developing <span class="keyword">cloud-ready applications</span> with <span class="keyword">deployment</span>, configuration, and environment awareness</li>
+              <li>Applying <span class="keyword">containerisation</span> and <span class="keyword">CI/CD</span> practices to support reliable delivery workflows</li>
+              <li>Designing <span class="keyword">backend workflows</span>, <span class="keyword">service boundaries</span>, and <span class="keyword">API-driven</span> application structures</li>
+              <li>Growing capability in <span class="keyword">distributed systems</span>, <span class="keyword">event-driven patterns</span>, and scalable cloud architecture</li>
+              <li>Working across <span class="keyword">AWS</span> and <span class="keyword">Azure</span>-oriented hosting and integration concepts</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <p class="skill-label">Skill 03</p>
+            <h3>Engineering Quality &amp; Problem Solving</h3>
+            <ul>
+              <li>Using <span class="keyword">debugging</span>, <span class="keyword">issue isolation</span>, and <span class="keyword">troubleshooting</span> to resolve problems methodically</li>
+              <li>Applying <span class="keyword">refactoring</span>, <span class="keyword">testing awareness</span>, and maintainability thinking to everyday development</li>
+              <li>Balancing <span class="keyword">security</span>, <span class="keyword">accessibility</span>, and <span class="keyword">usability</span> in production-minded software decisions</li>
+              <li>Documenting <span class="keyword">trade-offs</span>, lessons learned, and <span class="keyword">engineering reflections</span> as part of growth</li>
+              <!-- <li>Exploring <span class="keyword">AI-assisted development</span>, <span class="keyword">prompt engineering</span>, and practical AI integration</li> -->
+            </ul>
+          </article>
+          <article class="skill-group">
+            <p class="skill-label">Skill 04</p>
+            <h3>AI-Assisted Engineering</h3>
+            <ul>
+              <li><span class="keyword">Prompt engineering</span> workflows</li>
+              <li><span class="keyword">AI API</span> integration</li>
+              <li>Applied <span class="keyword">AI tooling</span> exploration</li>
+              <li><span class="keyword">AI-assisted development</span> practices</li>
+              <li><span class="keyword">Machine learning</span> fundamentals</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="layout-wrap">
+        <div class="section-heading worked-heading">
+          <p class="section-kicker">Where I've Worked</p>
+         
+        </div>
+
+        <div class="worked-shell">
+          <input checked class="worked-toggle" id="worked-1" name="worked-tabs" type="radio" />
+          <input class="worked-toggle" id="worked-2" name="worked-tabs" type="radio" />
+          <input class="worked-toggle" id="worked-3" name="worked-tabs" type="radio" />
+          <input class="worked-toggle" id="worked-4" name="worked-tabs" type="radio" />
+
+          <div class="worked-tabs" aria-label="Work experience companies">
+            <label class="worked-tab" for="worked-1">Full-stack Developer</label>
+            <label class="worked-tab" for="worked-2">Developer Intern</label>
+            <label class="worked-tab" for="worked-3">Education Consultant</label>
+            <label class="worked-tab" for="worked-4">Support Engineer</label>
+           
+          </div>
+
+          <div class="worked-panels">
+            <article class="worked-panel worked-panel-1">
+              <h3>Full-stack Developer <span>@ Auto Tech Repair & Services </span> </h3>
+              <p class="worked-meta">2025 - Now   <span> Auckland</span>        </p>
+              <ul class="worked-list">
+<li>Contributed to the design, development, and deployment of a full-stack digital workflow platform, transforming paper-based workshop operations into a centralised digital business system.</li> 
+<li>Developed React + TypeScript web applications for vehicle servicing, WOF inspections, job tracking, appointment scheduling, inventory management, purchasing, and multi-location operational workflows.</li>
+<li>Built and improved integrated digital features, including service workflow visualisation, email tracking and reminders, Xero accounting integration, inventory management, purchase automation, and paperless administration.</li>
+<li>Collaborated with business users to analyse manual workflows, clarify requirements, test improvements, and iterate practical solutions based on operational feedback.</li>
+<li>Applied Playwright end-to-end testing to validate critical user journeys, business workflows, and external system integrations.</li>
+<li>Supported Docker-based CI/CD deployment workflows using GitHub Actions and Azure Container Registry, building and managing container images to improve release consistency across Azure-hosted and multi-location server environments</ul>
+            </article>
+
+            <article class="worked-panel worked-panel-2">
+              <h3>Developer Intern <span>@ Wireless Nation</span></h3>
+              <p class="worked-meta"> Nov 2024 – Sep 2025  <span> Auckland</span>  </p>
+              <ul class="worked-list">
+
+  <li>Designed and developed cloud-hosted web applications for internal onboarding and training workflows using modern frontend development practices.</li>
+
+  <li>Implemented responsive and user-focused interfaces to improve usability and accessibility across onboarding experiences.</li>
+
+  <li>Worked within Agile delivery environments, collaborating with stakeholders to refine requirements and iteratively improve system functionality.</li>
+
+  <li>Reduced onboarding-related support queries by approximately 20% through improved workflow guidance and structured digital learning modules.</li>
+
+  <li>Produced maintainable documentation and scalable content update workflows to support long-term platform sustainability.</li>
+
+              </ul>
+            </article>
+
+            <article class="worked-panel worked-panel-3">
+              <h3>Education Consultant <span>@ Pioneer Education &amp; Immigration Services</span></h3>
+              <p class="worked-meta">2016 – 2017 <span>Auckland</span></p>
+              <ul class="worked-list">
+                <li>Provided student-focused consultation and support services, developing strong communication, problem-solving, and stakeholder engagement skills within multicultural and education-focused environments.</li>
+                <li>Supported students through complex decision-making processes related to study planning, onboarding, and settlement, building practical understanding of user needs and service-oriented workflows.</li>
+                <li>Maintained high levels of client satisfaction through responsive communication, structured guidance, and consistent follow-up practices.</li>
+                <li>Strengthened user empathy and service design awareness through direct experience supporting international students navigating unfamiliar systems and processes.</li>
+              </ul>
+            </article>
+
+            <article class="worked-panel worked-panel-4">
+              <h3>Support Engineer <span>@ Hon Hai Precision Industry</span></h3>
+              <p class="worked-meta">2012 – 2014 <span>China</span></p>
+              <ul class="worked-list">
+                <li>Supported enterprise transaction systems within high-volume production environments, contributing to system stability, operational reliability, and issue resolution workflows.</li>
+                <li>Troubleshot integration and application issues using Java and webMethods while analysing existing system behaviour, interfaces, and data flows.</li>
+                <li>Collaborated with cross-functional teams to investigate production issues, clarify requirements, document solutions, and support continuous system improvements.</li>
+                <li>Developed a strong troubleshooting mindset through hands-on exposure to production support, incident analysis, and enterprise operational processes.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="layout-wrap">
+        <div class="section-heading">
+          <p class="section-kicker">Featured Projects</p>
+          <!-- <h2>Projects presented as engineering case studies, not just UI screenshots.</h2> -->
+          <p>
+            Each featured project highlights the problem, the core architecture idea, the main implementation challenge,
+            and a reflection on what I would improve in the next iteration.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-featured">
+            <div class="project-media">
+              <img src="./images/weeklyplan.png" alt="NZAT internal workflow project preview" />
+            </div>
+            <div class="project-body">
+              <div class="card-topline">
+                <h3>NZAT Internal Workflow &amp; Training Systems</h3>
+                <span class="status-pill">Production Thinking</span>
+              </div>
+              <p class="project-summary">
+                Internal workflow and onboarding-oriented system work focused on making operational processes easier to
+                understand, follow, and maintain across teams.
+              </p>
+              <div class="tag-list">
+                <span>Workflow Systems</span>
+                <span>AWS</span>
+                <span>Content Design</span>
+                <span>Training UX</span>
+              </div>
+              <div class="detail-grid">
+                <div>
+                  <h4>Architecture</h4>
+                  <p>Structured around clear user flows, maintainable content organisation, and hosted delivery for internal access.</p>
+                </div>
+                <div>
+                  <h4>Key challenge</h4>
+                  <p>Turning complex internal procedures into a system that users could follow without extra support.</p>
+                </div>
+                <div>
+                  <h4>Reflection</h4>
+                  <p>Next iteration would add stronger analytics, clearer role-based views, and more explicit state tracking.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="./images/zip.PNG" alt="Community Minded Space App preview" />
+            </div>
+            <div class="project-body">
+              <div class="card-topline">
+                <h3>Community Minded Space App</h3>
+                <span class="status-pill">Completed</span>
+              </div>
+              <p class="project-summary">
+                A full-stack community platform where users upload wildlife content, interact through comments, and
+                manage permissions through admin controls.
+              </p>
+              <div class="tag-list">
+                <span>MongoDB</span>
+                <span>Express</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Authentication</span>
+              </div>
+              <div class="detail-grid">
+                <div>
+                  <h4>Architecture</h4>
+                  <p>React client, Node and Express API, MongoDB persistence, and role-aware content management.</p>
+                </div>
+                <div>
+                  <h4>Key challenge</h4>
+                  <p>Keeping user-generated content workflows manageable while separating standard and admin capabilities.</p>
+                </div>
+                <div>
+                  <h4>Reflection</h4>
+                  <p>I would tighten validation boundaries and refactor permission logic into clearer backend service layers.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="./casestudy/ZIP_compressed.pdf" target="_blank" rel="noreferrer">Read case study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="./images/triphome.png" alt="HomeTrip Booking App preview" />
+            </div>
+            <div class="project-body">
+              <div class="card-topline">
+                <h3>HomeTrip Booking App</h3>
+                <span class="status-pill">Completed</span>
+              </div>
+              <p class="project-summary">
+                A single-page booking experience that matches accommodation options to trip length, group size, and
+                travel constraints.
+              </p>
+              <div class="tag-list">
+                <span>JavaScript</span>
+                <span>SPA</span>
+                <span>CSS Animation</span>
+                <span>UML</span>
+              </div>
+              <div class="detail-grid">
+                <div>
+                  <h4>Architecture</h4>
+                  <p>Client-side state and rules-based filtering designed to surface valid booking combinations quickly.</p>
+                </div>
+                <div>
+                  <h4>Key challenge</h4>
+                  <p>Managing booking logic cleanly so UI behaviour stayed aligned with business rules.</p>
+                </div>
+                <div>
+                  <h4>Reflection</h4>
+                  <p>The next version would move business logic behind APIs and add automated tests around state transitions.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="./casestudy/HomeTrip Booking App_compressed.pdf" target="_blank" rel="noreferrer">Read case study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="./images/NutriPlays.png" alt="NutriPlays preview" />
+            </div>
+            <div class="project-body">
+              <div class="card-topline">
+                <h3>NutriPlays</h3>
+                <span class="status-pill">Research Project</span>
+              </div>
+              <p class="project-summary">
+                An educational interactive experience for children that combines nutrition learning, playful feedback,
+                and guided exploration.
+              </p>
+              <div class="tag-list">
+                <span>Interactive Design</span>
+                <span>Educational UX</span>
+                <span>JavaScript</span>
+                <span>Content Systems</span>
+              </div>
+              <div class="detail-grid">
+                <div>
+                  <h4>Architecture</h4>
+                  <p>Browser-based interaction flow with visual learning cues, reusable content patterns, and lightweight scripting.</p>
+                </div>
+                <div>
+                  <h4>Key challenge</h4>
+                  <p>Keeping the interface intuitive for young users while still delivering structured educational content.</p>
+                </div>
+                <div>
+                  <h4>Reflection</h4>
+                  <p>I would improve content modularity and add clearer measurement of user progress and engagement.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="./NutriPlays/RainbowMeals.html" target="_blank" rel="noreferrer">View live site</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles section" id="articles">
+      <div class="layout-wrap">
+        <div class="section-heading">
+          <p class="section-kicker">Engineering Articles</p>
+          <h2>Writing that shows system thinking, trade-offs, and engineering growth.</h2>
+          <p>
+            These article slots are designed to strengthen software engineering credibility without turning the site
+            into a blog-heavy content hub.
+          </p>
+        </div>
+        <div class="article-grid">
+          <article class="article-card">
+            <div class="card-topline">
+              <h3>Containerising a Full-Stack Application with Docker</h3>
+              <span class="meta-tag">Cloud &amp; DevOps</span>
+            </div>
+            <p>Notes on splitting frontend and backend services, handling environment setup, and preparing local apps for deployment workflows.</p>
+            <div class="tag-list">
+              <span>Docker</span>
+              <span>Deployment</span>
+              <span>Environment Config</span>
+            </div>
+            <p class="lesson">Lesson learned: shipping confidence increases when local development and deployment environments behave similarly.</p>
+          </article>
+
+          <article class="article-card">
+            <div class="card-topline">
+              <h3>Designing Role-Based Access Control in .NET</h3>
+              <span class="meta-tag">.NET</span>
+            </div>
+            <p>How I think about separating authentication, authorisation, and admin-only actions when building API-driven applications.</p>
+            <div class="tag-list">
+              <span>.NET 8</span>
+              <span>RBAC</span>
+              <span>API Design</span>
+            </div>
+            <p class="lesson">Lesson learned: permission rules are safer and easier to maintain when they live in backend policies, not scattered UI conditions.</p>
+          </article>
+
+          <article class="article-card">
+            <div class="card-topline">
+              <h3>What I Learned Building Internal Workflow Systems</h3>
+              <span class="meta-tag">Engineering Thinking</span>
+            </div>
+            <p>Reflections on process mapping, training usability, and why internal tools need the same clarity and care as customer-facing products.</p>
+            <div class="tag-list">
+              <span>Workflow Design</span>
+              <span>Systems Thinking</span>
+              <span>Documentation</span>
+            </div>
+            <p class="lesson">Lesson learned: a system is only effective when the workflow logic is obvious to the people who rely on it every day.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="layout-wrap contact-grid">
+        <div class="contact-copy">
+          <div class="section-heading">
+            <p class="section-kicker">Contact</p>
+            <h2>Open to software engineering opportunities in New Zealand.</h2>
+          </div>
+          <p>
+            If you are hiring for a full-stack or software engineering role and value clear communication, product
+            awareness, and engineering growth mindset, I would be glad to connect.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:yilu747@aucklanduni.ac.nz">yilu747@aucklanduni.ac.nz</a>
+            <a href="tel:+64274451032">+64 027 445 1032</a>
+            <a href="https://github.com/Lynn61Liu" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/yin-liu-5a44b4219" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="./casestudy/YinLIU--Resume-0274451032.pdf" target="_blank" rel="noreferrer">View CV</a>
+          </div>
+        </div>
+        <div class="contact-art">
+          <img src="./images/together.png" alt="Illustration representing collaboration" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="layout-wrap">
-
-      <div class="subtitle">
-        <h3>What I’ve been <span>working on <div class="line"></div></span>
-        </h3>
-        <p>
-          I’ve built and completed several impactful projects, combining my computer science knowledge with full-stack
-          web development. Each project has been a rewarding challenge, letting me apply my skills creatively and
-          deliver real-world solutions.
-        </p>
-      </div>
-
-      <div class="project-list-wrap">
-        <!-- item01 -->
-        <div class="project-item">
-          <div class="project-pic project-pic-4">
-            <img src="./images/zip.PNG" alt="" />
-          </div>
-          <div class="project-content">
-            <div class="project-title">Community Minded Space App</div>
-
-            <div class="project-stack">
-              <button calss="stack-item">MERN</button>
-              <button calss="stack-item">GitHub</button>
-              <button calss="stack-item">Node JS</button>
-              <button calss="stack-item">Mongo DB</button>
-              <button calss="stack-item">React Hooks</button>
-              <button calss="stack-item">SASS </button>
-              <button calss="stack-item">Cookies </button>
-            </div>
-            <div class="project-des">Developed a full-stack web application where users can register, upload, and share wildlife photos. Other users can comment and interact with posts, creating a community-driven experience. Admin users have full control to manage all content. This project demonstrates user authentication, content management, and real-time interaction, showcasing both front-end and back-end development skills. </div>
-            <div class="project-btn">
-              <a href="./casestudy/ZIP_compressed.pdf" target="_blank"><span>case study >
-                  <!-- <div></div> -->
-                </span>
-              </a>
-
-
-              <!-- <img src="./images/Icon awesome-github@2x.png" alt=""> -->
-            </div>
-          </div>
-        </div>
-        <!-- item04 -->
-        <div class="project-item">
-          <div class="project-pic project-pic-3">
-            <img src="./images/salon.png" alt="" />
-          </div>
-          <div class="project-content">
-
-            <div class="project-title">Hair Salon</div>
-            <div class="project-stack">
-              <button calss="stack-item">CMS </button>
-              <button calss="stack-item">WordPress</button>
-              <button calss="stack-item">Theme Develop</button>
-              <button calss="stack-item">SEO</button>
-              <button calss="stack-item">PHP </button>
-              <button calss="stack-item">ACF </button>
-
-
-            </div>
-            <div class="project-des">Developed a custom WordPress website for a hair salon service provider, allowing the client to easily manage and update content through a CMS. The site is fully functional across all major browsers, screen sizes, and operating systems, ensuring a seamless user experience. This project highlights custom theme development and user-friendly content management, giving the client full control over website updates without requiring technical knowledge. </div>
-            <div class="project-btn">
-
-              <a href="./casestudy/Hair Salon_compressed.pdf" target="_blank"><span>case study >
-                </span>
-              </a>
-              
-              </a>
-            </div>
-
-          </div>
-        </div>
-        <!-- item02 -->
-        <div class="project-item">
-          <div class="project-pic project-pic-2">
-            <img src="./images/triphome.png" alt="" />
-          </div>
-          <div class="project-content">
-
-            <div class="project-title">HomeTrip Booking App</div>
-            <div class="project-stack">
-              <button calss="stack-item">Javascript ES6 </button>
-              <button calss="stack-item">CSS Animations </button>
-              <button calss="stack-item">GitHub </button>
-              <button calss="stack-item">UML </button> <button calss="stack-item">SPA </button>
-
-
-            </div>
-            <div class="project-des">A single-page web application based on a specially designed site, allowing users to
-              input information and show accommodation options and related details based on the number of people in
-              their party and the length of time they intend to stay.
-            </div>
-            <div class="project-btn">
-              <a href="./casestudy/HomeTrip Booking App_compressed.pdf" target="_blank"><span>case study >
-                  <!-- <div></div> -->
-                </span>
-              </a>
-
-              <!-- <img src="./images/Icon awesome-github@2x.png" alt=""> -->
-            </div>
-          </div>
-
-
-        </div>
-        <!-- item03 -->
-        <div class="project-item">
-          <div class="project-pic project-pic-1"> <img src="./images/kiwi0.png" alt="" />
-          </div>
-          <div class="project-content">
-
-            <div class="project-title">Tiny Eco Kiwis</div>
-            <div class="project-stack">
-              <button calss="stack-item">UX Research </button>
-              <button calss="stack-item">UI Design </button>
-              <button calss="stack-item">Grid CSS</button> </button>
-              <button calss="stack-item">User Experience Design</button> </button>
-
-            </div>
-            <div class="project-des">User Experience Planning and Design for Action-Based Environmental Protection
-              Educational Applications.The goals of the APP are to increase public awareness of protecting the
-              environment, invite more people to join the ECO organisation, and engage with existing members.
-            </div>
-            <div class="project-btn">
-              <a href="./casestudy/Tiny Eco Kiwis_compressed.pdf" target="_blank"><span>case study >
-                  <!-- <div></div> -->
-                </span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-        <!-- itemuoa1 -->
-        <div class="project-item">
-          <div class="project-pic project-pic-1"> <img src="./images/weeklyplan.png" alt="" />
-          </div>
-          <div class="project-content">
-
-            <div class="project-title">Receipt Builder Applications</div>
-            <div class="project-stack">
-              <button calss="stack-item">React.js</button>
-              <button calss="stack-item">TypeScript </button>
-              <button calss="stack-item">Tailwind CSS</button> </button>
-              <button calss="stack-item">Express</button> </button>
-              <button calss="stack-item">Jira</button> </button>
-              <button calss="stack-item">Agile</button> </button>
-              <button calss="stack-item">Figma</button> </button>
-
-
-            </div>
-            <div class="project-des">A refrigerator inventory management system that tracks ingredients, generates
-              AI-based meal plans, compares supermarket prices, recommends recipes, and creates shopping lists.
-            </div>
-            <div class="project-btn">
-              <a href="./casestudy/Marvelous_Moose_Seminar.pdf" target="_blank"><span>case study >
-                  <!-- <div></div> -->
-                </span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- itemu health plan -->
-        <div class="project-item">
-          <div class="project-pic project-pic-1"> <img src="./images/NutriPlays.png" alt="" />
-          </div>
-          <div class="project-content">
-
-            <div class="project-title">NutriPlays</div>
-            <div class="project-stack">
-              <button calss="stack-item">Literature Review</button>
-              <button calss="stack-item">Educational Theory and Philosophy </button>
-              <button calss="stack-item">Analytical and Research</button> </button>
-              <button calss="stack-item">Express</button> </button>
-
-            </div>
-            <div class="project-des">Interactive web page designed for children around 5 years old to learn about
-              nutrition. It uses a colorful lunch plate as a guide to explain different food groups and their
-              nutritional value. Kids can also play a hands-on game where they create their own lunchboxes,
-              experimenting with balanced meals while learning about healthy eating.</div>
-            <div class="project-btn">
-              <a href="./NutriPlays/RainbowMeals.html" target="_blank"><span>Live Site >
-                  <!-- <div></div> -->
-                </span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- //SECTION CONTACT -->
-  <section class="contact">
-    <div class="layout-wrap">
-      <div class="subtitle">
-        <h3>Let’s Build Something <span>Together<div class="line"></div></span>
-        </h3>
-        <p>Feel free to reach out if you’re looking for a developer, have a question, or just want to connect.</p>
-        <p>
-          <a href="mailto:yilu747@aucklanduni.ac.nz" class="email-button">
-            📧 yilu747@aucklanduni.ac.nz
-          </a>
-
-        </p>
-        <p>
-           <a href="tel:+6491234567" class="email-button">📞 (+64) 027 445 1032</a>
-        </p>
-      </div>
-      <div>
-        <img src="./images/together.png" alt="">
-      </div>
-
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="layout-wrap">
-      <span><img src="./images/logo.png" alt=""></span>
-      <span> <a href="https://github.com/Lynn61Liu" target="_blank">Github</a> </span>
-      <span><a href="https://www.linkedin.com/in/yin-liu-5a44b4219" target="_blank">Linkedin</a></span>
-      <span><a href="#"> CV Download</span>
+      <p>Lynn Liu Portfolio</p>
+      <p>Focused on software engineering, systems thinking, and practical delivery.</p>
     </div>
   </footer>
 </body>
