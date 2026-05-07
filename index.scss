@@ -402,7 +402,9 @@ a {
 
 .project-media {
   min-height: 100%;
+  aspect-ratio: 1 / 1;
   background: linear-gradient(180deg, rgba(15, 143, 126, 0.08), rgba(19, 33, 44, 0.04));
+  overflow: hidden;
 }
 
 .project-media img,
@@ -410,6 +412,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .project-body {
