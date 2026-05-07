@@ -227,12 +227,7 @@ a:hover {
   background: var(--accent);
 }
 
-.hero-panel,
-.info-card,
-.experience-card,
-.project-card,
-.article-card,
-.skill-group {
+main article {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 28px;
@@ -293,7 +288,8 @@ a:hover {
 .info-card,
 .experience-card,
 .article-card,
-.skill-group {
+.skill-group,
+.worked-panel {
   padding: 24px;
 }
 
@@ -396,7 +392,7 @@ a:hover {
 }
 
 .project-featured {
-  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 1.28fr);
 }
 
 .project-media {
@@ -492,7 +488,7 @@ align-items: center; */
   grid-template-columns: 240px minmax(0, 1fr);
   gap: 40px;
   align-items: start;
-  width: 75%;
+  /* width: 75%; */
   margin: 0 auto;
 }
 
@@ -534,7 +530,7 @@ align-items: center; */
 
 .worked-panel {
   display: none;
-  padding: 4px 0 0;
+  padding-top: 28px;
 }
 
 .worked-panel h3 {
