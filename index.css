@@ -455,6 +455,44 @@ align-items: center; */
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.article-card {
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+}
+
+.article-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(15, 143, 126, 0.12), rgba(19, 33, 44, 0.06));
+}
+
+.article-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.article-body {
+  display: grid;
+  gap: 16px;
+}
+
+.article-card:nth-child(even) .article-media {
+  order: 2;
+}
+
+.article-card:nth-child(3n + 2) {
+  transform: translateY(26px);
+}
+
+.article-card:nth-child(3n) {
+  transform: translateY(-14px);
+}
+
 .lesson {
   margin-top: 18px;
   padding-top: 18px;
@@ -658,6 +696,11 @@ align-items: center; */
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .article-card:nth-child(3n + 2),
+  .article-card:nth-child(3n) {
+    transform: none;
+  }
+
   .project-media {
     max-height: 340px;
   }
@@ -702,6 +745,10 @@ align-items: center; */
   .skills-grid,
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .article-card:nth-child(even) .article-media {
+    order: 0;
   }
 
   .worked-tab {
